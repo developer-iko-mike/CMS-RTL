@@ -1,0 +1,29 @@
+.detailModal_container{
+    background-color: #000000a9;
+    display: none;
+   }
+   
+   .detailModal{
+    width: 25rem;
+    margin-top: -80rem;
+   }
+
+.detailModal_container_activate{
+    display: flex;
+}
+
+.detailModal_activate{
+    margin: 0;
+}
+
+
+
+
+
+
+
+.detailModal_container{
+    padding: 24px;
+    background-color: var(--white);
+    
+}

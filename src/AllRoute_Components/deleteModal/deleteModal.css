@@ -1,0 +1,61 @@
+.modalDeleteContainer{
+ background-color: #000000a9;
+}
+
+.modalDelete{
+ width: 25rem;
+}
+
+.modalDelete_btn{
+ width: 6rem;
+}
+
+.modalDelete_rejactBtn:focus {
+ box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+.modalDeleteContainer{
+ display: none;
+}
+.modalDeleteContainer_activate{
+ display: flex;
+}
+.modalDelete{
+ margin-top: -80rem;
+}
+.modalDelete_activate{
+ margin: 0;
+}
+
+/* deleteModal.css */
+.modalDeleteContainer {
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.3s ease-in-out;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background: rgba(0, 0, 0, 0.6);
+ display: flex !important; /* تضمین نمایش */
+ justify-content: center;
+ align-items: center;
+}
+
+.modalDeleteContainer_activate {
+ opacity: 1;
+ visibility: visible;
+}
+
+.modalDelete {
+ transform: scale(0.8);
+ opacity: 0;
+ transition: all 0.3s ease-in-out;
+ width: 25rem;
+ padding: 1.5rem;
+ background: white;
+ border-radius: 0.7rem;
+}
+
+.modalDelete_activate {
+ transform: scale(1);
+ opacity: 1;
+}

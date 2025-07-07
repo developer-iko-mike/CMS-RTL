@@ -1,0 +1,25 @@
+header{
+ padding-top: 1rem;
+}
+
+.header_left__search{
+ width: 27rem;
+ height: 3.2rem;
+}
+
+.header_left__search___ipt{
+ color: #000;
+ width: 70%;
+}
+
+.header_left__search___submit{
+ width: 7rem;
+}
+
+.header_left__search{
+ height: 2.8rem;
+}
+
+.header_right__name{
+ line-height: 1.3rem;
+}

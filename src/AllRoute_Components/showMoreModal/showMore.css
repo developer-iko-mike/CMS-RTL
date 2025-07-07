@@ -1,0 +1,6 @@
+.showAllModal{
+ max-width: 86rem;
+ width: auto;
+ max-height: 90vh;
+ overflow: auto;
+}

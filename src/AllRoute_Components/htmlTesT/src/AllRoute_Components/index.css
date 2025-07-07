@@ -1,0 +1,94 @@
+
+
+*{
+ text-transform: capitalize;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: var(--black);
+ /* font-size: 20px; */
+ font-family: "lalezar";
+}
+
+body{
+ background-color: var(--l-grey);
+ direction: rtl;
+}
+
+.dark-theme{
+ background-color: var(--l-black);
+ --white: #0c0c0c;
+ --blue: var(--d-blue);
+ --black: #fff;
+}
+
+/* Modal Base Styles - app.css */
+/* Common Modal Styles */
+.parentModal_container {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.7);
+ justify-content: center;
+ align-items: center;
+ z-index: 1000;
+ transition: all 0.3s ease;
+}
+
+.parentModal_container--active {
+ display: flex;
+}
+/* Common Modal Styles */
+.parentModal_container {
+ opacity: 0;
+ visibility: hidden;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.7);
+ justify-content: center;
+ align-items: center;
+ z-index: 1000;
+ transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.parentModal_container--active {
+ opacity: 1;
+ visibility: visible;
+}
+
+.parentModal {
+ background: white;
+ border-radius: 7px;
+ padding: 1.5rem;
+ margin-top: -80rem;
+ transition: margin-top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ width: 35rem;
+ position: relative;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.parentModal--active {
+ margin-top: 0;
+}
+
+.modal-close-btn {
+ position: absolute;
+ top: 1rem;
+ left: 1rem;
+ background: none;
+ border: none;
+ font-size: 1.8rem;
+ color: #e74c3c;
+ cursor: pointer;
+ transition: transform 0.2s ease;
+}
+
+.modal-close-btn:hover {
+ transform: rotate(90deg);
+}

@@ -1,0 +1,355 @@
+.home_item {
+ width: 45%;
+ height: 3.2rem;
+}
+.home_search{
+ width: 95%;
+}
+/* Table Container */
+.table-container {
+ width: 100%;
+ margin-top: 1.5rem;
+ overflow-x: auto;
+}
+
+/* Base Table Styles */
+.product-table {
+ width: 100%;
+ border-collapse: collapse;
+ background-color: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+}
+/* Table Container */
+.table-container {
+ width: 100%;
+ margin-top: 1.5rem;
+ overflow-x: auto;
+ font-size: 1.1rem; /* Larger base font size */
+}
+
+/* Base Table Styles */
+.product-table {
+ width: 100%;
+ border-collapse: collapse;
+ background-color: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+ font-size: inherit; /* Inherit from container */
+}
+
+/* Table Header */
+.table-header {
+ background-color: #f8f9fa;
+ border-bottom: 2px solid #e9ecef;
+ font-size: 1.15rem; /* Slightly larger for headers */
+}
+
+.table-header th {
+ padding: 1.2rem 1rem; /* Increased padding */
+ text-align: center;
+ font-weight: 600;
+ color: #495057;
+}
+
+/* Table Rows */
+.table-row {
+ border-bottom: 1px solid #e9ecef;
+ transition: background-color 0.2s;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+.table-row td {
+  padding: 1.2rem 1rem; /* Increased padding */
+  text-align: center;
+ vertical-align: middle;
+}
+
+/* Column Specific Styles */
+.image-cell {
+  width: 180px; /* Slightly larger image column */
+  padding: 0 !important;
+  height: 7rem;
+}
+
+.product-image {
+  width: 100%;
+  /* max-width: 180px; Larger images */
+  height: 7rem;
+ object-fit: contain;
+ border-radius: 4px;
+}
+
+.name-cell {
+ min-width: 220px;
+ font-weight: 500;
+}
+
+.price-cell {
+ color: #2b8a3e;
+ font-weight: 600;
+ font-size: 1.1rem; /* Emphasize price */
+}
+
+.stock-cell {
+ font-weight: 500;
+ font-size: 1.1rem; /* Emphasize stock */
+}
+
+/* Action Buttons */
+.actions-cell {
+ min-width: 300px; /* More space for buttons */
+}
+
+.action-buttons {
+ display: flex;
+ justify-content: space-between;
+ gap: 0.5rem; /* Space between buttons */
+}
+
+.action-btn {
+ flex: 1; /* Equal width for all buttons */
+ padding: 0.8rem 0; /* Taller buttons */
+ border: none;
+ border-radius: 6px;
+ font-size: 1.2rem; /* Larger button text */
+ cursor: pointer;
+ transition: all 0.2s;
+ min-width: 0; /* Allow equal distribution */
+}
+
+.action-btn.details {
+ background-color: #e7f5ff;
+ color: #1971c2;
+}
+
+.action-btn.delete {
+ background-color: #fff5f5;
+ color: #c92a2a;
+}
+
+.action-btn.edit {
+ background-color: #dafffc;
+ color: #495057;
+}
+
+.action-btn:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ .table-container {
+   font-size: 1rem; /* Slightly smaller on mobile */
+ }
+ 
+ .table-header th,
+ .table-row td {
+   padding: 1rem 0.75rem;
+ }
+ 
+ .action-buttons {
+   flex-direction: column;
+   gap: 0.3rem;
+ }
+ 
+ .action-btn {
+   width: 100%;
+   padding: 0.7rem 0;
+ }
+}
+
+.editModalIpt{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.editModalTexTarea{
+  width: 100%;
+resize: vertical ;
+min-height: 70px;
+max-width: 200px;
+}
+
+/* استایل کلی مودال */
+.detailsModalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.detailsModal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* استایل تصویر */
+.detailsImageContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detailsProductImage {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* استایل جدول */
+.detailsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.detailsTableHeader {
+  background-color: #f5f5f5;
+  padding: 12px;
+  text-align: right;
+  border-bottom: 2px solid #ddd;
+}
+
+.detailsLabel {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  width: 20%;
+  font-weight: 600;
+}
+
+.detailsValue {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  width: 30%;
+}
+
+/* استایل اینپوت‌ها */
+.editModalIpt {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.editModalTexTarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.editlabel{
+  width: 15% !important;
+}
+.editImageContainer{
+  margin-bottom: 0;
+}
+
+
+.bgImage_section{
+  background-color: #202020e5;
+  }
+  
+  .bgImage_container{
+   width: 60rem;
+   height: 50rem;
+  } 
+
+
+
+
+
+
+
+
+
+  .image-cell {
+    width: auto !important; /* تغییر از عرض ثابت به حالت خودکار */
+    min-width: 150px; /* حداقل عرض برای جلوگیری از فشردگی بیش از حد */
+    padding: 0 !important;
+    height: 7rem;
+    text-align: center; /* مرکز کردن تصویر */
+  }
+
+  .product-image {
+    height: 100%; /* ارتفاع کامل سلول */
+    width: auto; /* عرض خودکار بر اساس نسبت ابعاد */
+    max-width: 100%; /* جلوگیری از خروج از محدوده سلول */
+    display: block; /* جلوگیری از حاشیه ناخواسته */
+    margin: 0 auto; /* مرکز کردن افقی */
+    object-fit: contain; /* حفظ نسبت ابعاد */
+    border-radius: 4px;
+  }
+
+  .image-col {
+    width: auto !important; /* تغییر از عرض ثابت به حالت خودکار */
+  }
+
+  .image-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* فاصله داخلی اختیاری */
+  }
+
+
+
+  /* سلول تصویر */
+.image-cell {
+  width: auto !important;
+  height: 7rem !important; /* ارتفاع ثابت */
+  padding: 0 !important;
+  position: relative; /* برای absolute کردن wrapper */
+}
+
+/* Wrapper تصویر */
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* برای پنهان کردن بخشهای اضافی تصویر */
+}
+
+/* خود تصویر */
+.product-image {
+  height: 100% !important; /* ارتفاع کامل سلول */
+  width: auto !important; /* عرض خودکار */
+  max-width: none !important; /* غیرفعال کردن محدودیت عرض */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-25%);
+  object-fit: cover; /* پر کردن فضای بدون تغییر نسبت */
+}
+
+.product-table {
+  table-layout: fixed; /* ثابت نگه داشتن ابعاد سلولها */
+}
+
+.table-row {
+  height: 7rem !important; /* ارتفاع ثابت برای سطرها */
+}

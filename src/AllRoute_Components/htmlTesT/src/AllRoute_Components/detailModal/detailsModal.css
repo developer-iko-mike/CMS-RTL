@@ -1,0 +1,117 @@
+/* detailsModal.css */
+.detailsModalContainer {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.7);
+ justify-content: center;
+ align-items: center;
+ z-index: 1000;
+ transition: background 0.3s ease;
+}
+
+.detailsModalContainer_activate {
+ display: flex;
+}
+
+.detailsModal {
+ background: white;
+ border-radius: 7px;
+ padding: 1.5rem;
+ margin-top: -80rem;
+ transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ width: 35rem;
+ position: relative;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.detailsModal_activate {
+ margin-top: 0;
+}
+
+/* استایل‌های اختصاصی جدول */
+.detailsTable {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 1rem 0;
+}
+
+.detailsTableHeader {
+ background: #f5f6fa;
+ color: #2d3436;
+ padding: 1rem;
+ font-size: 1.1rem;
+}
+
+.detailsLabel {
+ font-weight: 600;
+ color: #2d3436;
+ padding: 0.8rem;
+ border-bottom: 1px solid #dfe6e9;
+ width: 40%;
+}
+
+.detailsValue {
+ color: #636e72;
+ padding: 0.8rem;
+ border-bottom: 1px solid #dfe6e9;
+}
+
+/* استایل تصویر */
+.detailsImageContainer {
+ text-align: center;
+}
+
+.detailsProductImage {
+ max-width: 100%;
+ max-height: 280px;
+ border-radius: 5px;
+ border: 2px solid #dfe6e9;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* دکمه بستن */
+.detailsCloseBtn {
+ position: absolute;
+ top: 1rem;
+ left: 1rem;
+ background: none;
+ border: none;
+ font-size: 1.8rem;
+ color: #e74c3c;
+ cursor: pointer;
+ transition: transform 0.2s ease;
+}
+
+.detailsCloseBtn:hover {
+ transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+/* استایل اینپوت‌ها */
+.editModalIpt {
+ width: 100%;
+ padding: 8px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ font-size: 14px;
+ background: white;
+}
+
+.editModalTexTarea {
+ min-width: 100%;
+ padding: 8px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ resize: none;
+ overflow: auto;
+}

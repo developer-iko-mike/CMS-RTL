@@ -1,0 +1,13 @@
+.table_td{
+ min-width: 140px !important;
+ width: auto !important;
+ color: #000;
+}
+
+.maxWH{
+ min-width: 975px;
+ min-height: 161px;
+ max-width: 80vw;
+ max-height: 70vh;
+
+}
