@@ -1,4 +1,14 @@
+/* ---------- lalezar --------- */
 
+@font-face {
+  font-family: "lalezar";
+  src: url("../public/fonts/Lalezar-Regular.ttf"),
+    url("../public/fonts/Lalezar-Regular.otf");
+}
+
+.fflalezar {
+  font-family: "lalezar";
+}
 
 *{
  text-transform: capitalize;
