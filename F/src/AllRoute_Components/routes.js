@@ -1,4 +1,4 @@
-import Home from '../Pages/home/Home.jsx'
+import Home from '../Pages/home/Home'
 import Comments from '../Pages/comments/Comments.jsx'
 import Users from '../Pages/users/Users.jsx'
 import Orders from '../Pages/orders/Orders.jsx'
@@ -12,4 +12,4 @@ let routes = [
   { path: '/offs', element: <Offs /> },
 ];
 
-export default routes
+export default routes;

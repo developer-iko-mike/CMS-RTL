@@ -10,7 +10,7 @@ commentsRouter.get("/", (req, res) => {
 
   SabzLearnShopDB.query(selectAllCommentsQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message }); 
     } else {
       res.send(result);
     }
@@ -23,7 +23,7 @@ commentsRouter.delete("/:commentID", (req, res) => {
   let deleteCommentQuery = `DELETE FROM Comments WHERE id = ${commentID}`;
   SabzLearnShopDB.query(deleteCommentQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -36,7 +36,7 @@ commentsRouter.put("/:commentID", (req, res) => {
 
   SabzLearnShopDB.query(editCommentQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }

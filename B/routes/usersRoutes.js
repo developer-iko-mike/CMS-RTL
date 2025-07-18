@@ -10,7 +10,7 @@ usersRouter.get("/", (req, res) => {
 
   SabzLearnShopDB.query(selectAllUsersQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -24,7 +24,7 @@ usersRouter.delete("/:userID", (req, res) => {
 
   SabzLearnShopDB.query(deleteUserQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -39,7 +39,7 @@ usersRouter.put("/:userID", (req, res) => {
 
   SabzLearnShopDB.query(editUserQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }

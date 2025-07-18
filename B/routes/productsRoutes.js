@@ -11,8 +11,8 @@ productsRouter.get("/", (req, res) => {
   SabzlearnShopDB.query(selectAllProductsQuery, (err, result) => {
     console.log('get products query');
     if (err) {
-      console.log(err);
-      res.send(null);
+      console.error("Database Error:", err); 
+      res.status(500).json({ error: err.message });
     } else {
       console.log('get products query result');
       res.send(result);
@@ -42,7 +42,7 @@ productsRouter.put("/:productID", (req, res) => {
   SabzlearnShopDB.query(updateProductQuery, (err, result) => {
     if (err) {
       console.log(err);
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -56,7 +56,7 @@ productsRouter.post("/", (req, res) => {
   SabzlearnShopDB.query(addNewProductQuery, (err, result) => {
     if (err) {
       console.log(err);
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }

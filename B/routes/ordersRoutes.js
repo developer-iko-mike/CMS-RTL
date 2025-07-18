@@ -10,7 +10,7 @@ ordersRouter.get("/", (req, res) => {
 
   SabzLearnShopDB.query(selectAllOrdersQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -23,7 +23,7 @@ ordersRouter.delete("/:orderID", (req, res) => {
 
   SabzLearnShopDB.query(deleteOrderQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
@@ -37,7 +37,7 @@ ordersRouter.put("/active-order/:orderID/:isActive", (req, res) => {
 
   SabzLearnShopDB.query(activeOrderQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }

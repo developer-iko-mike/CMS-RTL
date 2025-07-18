@@ -12,7 +12,7 @@ adminsRouter.get("/", (req, res) => {
 
   SabzLearnShopDB.query(selectMainAdminQuery, (err, result) => {
     if (err) {
-      res.send(null);
+      res.status(500).json({ error: err.message });
     } else {
       res.send(result);
     }
